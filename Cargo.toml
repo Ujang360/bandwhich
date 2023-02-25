@@ -1,8 +1,8 @@
 [package]
-edition = "2018"
+edition = "2021"
 name = "bandwhich"
 description = "Display current network utilization by process, connection and remote IP/hostname"
-version = "0.20.0"
+version = "0.20.1-fork"
 homepage = "https://github.com/imsnif/bandwhich"
 repository = "https://github.com/imsnif/bandwhich"
 readme = "README.md"
@@ -11,7 +11,7 @@ authors = [
   "Eduardo Toledo <etoledom@icloud.com>",
   "Eduardo Broto <ebroto@tutanota.com>",
   "Kelvin Zhang <zhangxp1998@gmail.com>",
-  "Brooks Rady <b.j.rady@gmail.com>"
+  "Brooks Rady <b.j.rady@gmail.com>",
 ]
 keywords = ["networking", "utilization", "cli"]
 categories = ["network-programming", "command-line-utilities"]
@@ -21,7 +21,7 @@ exclude = ["src/tests/*", "demo.gif"]
 [dependencies]
 pnet = "0.26.0"
 ipnetwork = "0.16.0"
-tui = { version = "0.12", default-features = false, features = ["crossterm"]}
+tui = { version = "0.12", default-features = false, features = ["crossterm"] }
 crossterm = "0.17.7"
 structopt = "0.3"
 failure = "0.1.6"
